@@ -42,11 +42,14 @@ export default function Home() {
   return (
     <div>
       <Head>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2718515830886252"
+     crossorigin="anonymous"></script>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2718515830886252"
+     crossorigin="anonymous"></script>
         <title>IA-FS</title>
         <link rel="icon" href="/marmota.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2718515830886252"
-        crossorigin="anonymous"></script>
+        
       </Head>
       
       <NavigationBar/>
