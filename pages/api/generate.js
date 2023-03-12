@@ -30,7 +30,7 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generatePrompt(text),
-      temperature: 0.9,
+      temperature: 0,
       max_tokens: 3500,
     });
     // estado 500 ok, recepcion del mensaje es correcta
