@@ -1,7 +1,7 @@
 import Head from "next/head";
 import NavigationBar from "./NavigationBar";
-//import Logueado from "./Logueado";
-import {Logueado} from "./Logueado";
+import FooterBar from "./FooterBar";
+import Perfil from "./perfil";
 
 export default function Home() {
   return (
@@ -13,7 +13,10 @@ export default function Home() {
       </Head>
 
       <NavigationBar/>
-      <Logueado/>
+      
+      <Perfil/>
+
+      <FooterBar/>
     </div>
   );
 }
