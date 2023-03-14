@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import AiHome from "./AIHome";
 import styles from "./index.module.css"
 
 
@@ -57,7 +56,6 @@ function perfil() {
        
           <h2>{user.name}</h2>
 
-          <AiHome/>
           <button className={styles.gen_res_naranjo} onClick={handleLogout}>Cerrar sesión</button>
         </div>
       )}

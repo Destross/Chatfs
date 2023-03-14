@@ -58,11 +58,7 @@ export default function AiHome() {
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}
           />
-
-          <div className={styles.contenedor}>
             <input className={styles.gen_res} type="submit" value="Generar respuesta" />
-          </div>
-
         </form>
 
         {isLoading && <img src={loaderImg} className={styles.loader} />}

@@ -3,6 +3,7 @@ import NavigationBar from "./NavigationBar";
 import FooterBar from "./FooterBar";
 import Perfil from "./perfil";
 import Publicacion from "./Publicacion";
+import AiHome from "./AIHome";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       
       <Perfil/>
       <Publicacion/>
+      <AiHome/>
       <FooterBar/>
     </div>
   );
