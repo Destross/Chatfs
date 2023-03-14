@@ -3,7 +3,7 @@ import publish from "./publish.module.css";
 
 const Publicacion = () => {
 
-    const loaderImg = "/roman_oldman.png";
+    const loaderImg = "/Sandmoon.png";
     const loaderImg_content = "/help_recycle.png";
 
   return (
