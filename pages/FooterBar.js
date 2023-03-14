@@ -20,7 +20,7 @@ export default function FooterBar() {
 
       <ul className={styles.navbar__list}>
           <li className={styles.navbar__item}>
-            <Link legacyBehavior href="/about">
+            <Link legacyBehavior href="/contacto">
               <a>Contacto</a>
             </Link>
           </li>
