@@ -9,29 +9,30 @@
   padding-top: 2vh;
   display: flex;
   flex-direction: column;
-  min-width: min-content;
-  width: auto;
-  height: fit-content;
   align-items: center;
   text-align: left;
   background-image: url('/dark_calypso.png');
-  /*background: #a3c9dd;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  color: #a8a8a8;
+  color: #ffffffd9;
 }
 .main .icon {
-  width: 15vw;
+  width: 35vw;
   border-radius: 50%;
 }
-.main h3 {
+.main h3{
   font-size: 32px;
   line-height: 40px;
-  font-weight: bold;
   color: #000000;
   margin: 16px 0 40px;
 }
+.main p{
+  width: 600px;
+  font-size: 16px;
+  text-align: justify;
+}
+
 .main form {
   display: flex;
   flex-direction: column;
@@ -74,19 +75,21 @@
   display: grid;
   justify-content: center;
   align-items: center;
-
 }
-.gen_res{
-  color: rgb(255, 255, 255);
+.form .gen_res{
+  display: flex;
+  margin: auto;
   text-align: center;
-  width: fit-content;  
-  margin: 10px;
+  width: fit-content;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
-  background-color: #3ae1accb;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #42c0ffcb;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .gen_res_naranjo{
   color: rgb(255, 255, 255);
@@ -98,28 +101,31 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .result {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   display: flex;
-  font-weight: bold;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 14px;
   height: fit-content;
   line-height: 20px;
   margin-top: 10px;
-  max-width: 300px;
+  max-width: 80%;
   min-height: 25px;
   padding: 25px;
   width: 100%;
+  white-space: pre-wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .loader {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8vw;
+  width: 6vw;
   height: 5vh;
   border-radius: 20px;
 }
@@ -134,34 +140,34 @@
   border-radius: 25px;
   text-align: center;
   cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   
 }
 .navbar__contenedor{
-  margin: 0% auto;
   display: flex;
+  margin: 0% auto;
   justify-content: center;
 }
 .navbar {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #2eb7e1;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff00;
   min-width: fit-content;
   position: static;
   top: 0px;
   left: 0px;
   width: fit-content;
-  border: 2px;
-  border-radius: 15px;
-  border-style: outset;
-  border-color: #00b3ff;
   margin: 10px;
+  border-style: dashed;
+  border-color: #565656;
 }
+
 .navbar__item a {
-  color: rgb(0, 0, 0);
+
+  color: #14c69a;
   text-decoration: none;
   padding: 0px;
   margin: 5px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
 }
 .navbar__list {
@@ -174,7 +180,6 @@
   height: 40px;
 }
 .navbar__item {
-  margin: 0;
   padding: 0;
 }
 .correo{
@@ -185,42 +190,63 @@
   font-size: 18px;
   font-weight: bold;
 }
+.container_explicacion{
+  margin-bottom: 20px;
+}
+
+.container_explicacion h1{
+  margin: auto;
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 20px;  
+}
+.container_explicacion h2{
+  margin: auto;
+  text-align: center;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+.container_explicacion p{
+  margin: auto;
+  line-height: 20px;
+  text-align: justify;
+  font-family: monospace;
+}
+
 
 @media only screen and (max-width: 600px) {
 
 
-.input_main {
-  font-size: 14px;
-  line-height: 20px;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;;
-}
+  .input_main {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;;
+  }
 
-.main input[type="text"] {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 80vw;
-  height: 20px;
-  border: 1px solid #10a37f;
-  border-radius: 20px;
-  margin-bottom: 10px;
+  .main input[type="text"] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    height: 20px;
+    border: 1px solid #10a37f;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline-color: #10a37f;
+  }
 
-  outline-color: #10a37f;
-}
-
-.gen_res{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #3ae1accb;
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  height: fit-content;
-  text-align: center;
-  width: fit-content;  
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  margin: 10px;
-  margin: auto;
-  
-}
+  .gen_res{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3ae1accb;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    width: fit-content;  
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+  }
 
 }

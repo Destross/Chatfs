@@ -1,5 +1,8 @@
 import { useState } from "react";
 import styles from "./index.module.css";
+import ChatGPT3Explanation from "./portada"
+import NavigationBar from "./NavigationBar";
+import FooterBar from "./FooterBar";
 
 export default function AiHome() {
   
@@ -46,10 +49,13 @@ export default function AiHome() {
   return (
     <div>
       <main className={styles.main}>
-        
+        <NavigationBar/>
+        <ChatGPT3Explanation/>
         <img src="/brain.gif" className={styles.icon} />
-
-        <form onSubmit={onSubmit}>
+        <div className={styles.result}>
+        {result}
+        </div>
+        <form className={styles.form} onSubmit={onSubmit}>
           <input
             className={styles.input_main}
             type="text"
@@ -58,13 +64,13 @@ export default function AiHome() {
             value={textInput}
             onChange={(e) => setTextInput(e.target.value)}
           />
-            <input className={styles.gen_res} type="submit" value="Generar respuesta" />
+          <input className={styles.gen_res} type="submit" value="Enviar" />
         </form>
 
         {isLoading && <img src={loaderImg} className={styles.loader} />}
-        {result}
+        
         <button className={styles.btn_reset} onClick={() => window.location.reload(false)}>Recargar!</button>
-
+        <FooterBar/>
       </main>
     </div>
   );
