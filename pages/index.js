@@ -10,14 +10,14 @@ export default function Home() {
     <div>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-        <title>Post FS</title>
+        <title>Mindy-AI by FS</title>
         <link rel="icon" href="/marmota.png" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2718515830886252"
      crossorigin="anonymous"></script>
       </Head>
 
       <AiHome/>
-      
+
     </div>
   );
 }
