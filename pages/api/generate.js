@@ -30,11 +30,13 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generatePrompt(text),
-      temperature: 0,
+      temperature: 0.6,
       max_tokens: 3500,
     });
-    // estado 500 ok, recepcion del mensaje es correcta
-    res.status(200).json({ result: completion.data.choices[0].text });
+    const result = completion.data.choices[0].text;
+    const formattedResult = result.replace(/•\-/g,"\n");
+    res.status(200).json({ result: formattedResult });
+
   } catch(error) {
     if (error.response) {
       // ver tipo de error por consola
@@ -53,15 +55,10 @@ export default async function (req, res) {
 }
 
 function generatePrompt(text) {
-  const capitalizedText =
-    text[0].toUpperCase() + text.slice(1).toLowerCase();
+  const capitalizedText = text[0].toUpperCase() + text.slice(1).toLowerCase();
 
-  // Si el texto contiene una lista, agregar el carácter de lista a cada elemento
-  if (/\n\s*[-*+]\s/.test(text)) {
-    const items = text.split('\n').map((line) => line.trim());
-    const formattedItems = items.map((item) => `• ${item.slice(2)}`);
-    return formattedItems.join('\n');
-  }
+  const promptText = "Responde de la forma mas logica y correcta posible. " + capitalizedText;
 
-  return "Me respondes lo siguiente?, "+capitalizedText;
+  return promptText;
 }
+

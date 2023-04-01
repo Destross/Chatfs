@@ -16,12 +16,8 @@ export default function Home() {
      crossorigin="anonymous"></script>
       </Head>
 
-      <NavigationBar/>
-      
-      <Perfil/>
-      <Publicacion/>
       <AiHome/>
-      <FooterBar/>
+      
     </div>
   );
 }
