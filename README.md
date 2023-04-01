@@ -1,3 +1,5 @@
-# Portafolio Felipe-Sagredo con tecnologia de OpenAI
+# Mindy-AI una Inteligencia Artificial utilizando el motor de ChatGPT3 de OpenAI.
 
-Puedes tener acceso en: [https://portafolio-fs.netlify.app/]
+Con motivos de aprender como integrar una IA a un Sitio Web por Felipe-Sagredo.
+
+Puedes tener acceso en: [https://mindy-ai.netlify.app/]
