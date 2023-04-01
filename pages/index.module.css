@@ -20,6 +20,8 @@
 .main .icon {
   width: 35vw;
   border-radius: 50%;
+  box-shadow: 2px 20px 10px rgba(0, 0, 0, 0.4);
+  
 }
 .main h3{
   font-size: 32px;
@@ -37,11 +39,12 @@
   display: flex;
   flex-direction: column;
 }
+
 .main input[type="text"] {
   padding: 10px 10px;
   margin: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  width: 20vw;
+  width: 60vw;
   border: 1px solid #10a37f;
   border-radius: 20px;
   margin-bottom: 0px;
@@ -77,6 +80,7 @@
   align-items: center;
 }
 .form .gen_res{
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   margin: auto;
   text-align: center;
@@ -89,7 +93,7 @@
   cursor: pointer;
   background-color: #42c0ffcb;
   color: rgb(255, 255, 255);
-  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .gen_res_naranjo{
   color: rgb(255, 255, 255);
@@ -115,7 +119,7 @@
   max-width: 80%;
   min-height: 25px;
   padding: 25px;
-  width: 100%;
+  width: 80%;
   white-space: pre-wrap;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 20px;
@@ -141,7 +145,7 @@
   text-align: center;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
-  
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .navbar__contenedor{
   display: flex;
@@ -222,16 +226,20 @@
     line-height: 20px;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
+  
 
   .main input[type="text"] {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
     width: 80vw;
-    height: 20px;
+    height: 40px;
     border: 1px solid #10a37f;
     border-radius: 20px;
     margin-bottom: 10px;
     outline-color: #10a37f;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   .gen_res{
@@ -247,6 +255,23 @@
     border: none;
     margin: 10px;
     border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+ 
+  .container_explicacion_0{
+    width: fit-content;
+  }
+
+  .container_explicacion h1{
+    width: 90%;
+  }
+  .container_explicacion h2{
+    width: 90%;
+    font-size: larger;
+  }
+  .container_explicacion p{
+    width: 80%;
   }
 
 }

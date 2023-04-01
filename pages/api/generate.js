@@ -57,8 +57,7 @@ export default async function (req, res) {
 function generatePrompt(text) {
   const capitalizedText = text[0].toUpperCase() + text.slice(1).toLowerCase();
 
-  const promptText = "Responde de la forma mas logica y correcta posible. " + capitalizedText;
 
-  return promptText;
+  return "Eres una IA creada por Felipe Sagredo desde Chile, utilizando el motor de ChatGPT3 creado por tecnología OpenAi, en una pagina llamada Mindy-AI, ahora responde lo siguiente. " + capitalizedText;
 }
 
