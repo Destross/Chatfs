@@ -9,9 +9,13 @@ export default function Contact() {
         <title>Contacto</title>
       </Head>
       <NavigationBar/>
-      <div className={styles.main}>
+      <div className={styles.contacto_0}>
+        <div className={styles.contacto_1}>
         <h1>Contacto</h1>
-        <h4>felipesagredogalindo@gmail.com</h4>
+        <p>felipesagredogalindo@gmail.com</p>
+        <a href="https://github.com/Destross" target="_blank">GitHub</a>
+        <a href="https://github.com/Destross/Chatfs" target="_blank">Proyecto ChatFs</a>
+        </div>
       </div>
     </div>
   );
