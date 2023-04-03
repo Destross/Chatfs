@@ -9,8 +9,9 @@ export default function AiHome() {
   const [textInput, setTextInput] = useState("");
   const [result, setResult] = useState();
   const [isLoading, setIsLoading] = useState(false);
+  const [respuesta, setRespuesta] = useState(false);
 
-  const loaderImg = "/loader.gif";
+  const loaderImg = "/cargando.gif";
 
   async function onSubmit(event) {
 
@@ -43,6 +44,7 @@ export default function AiHome() {
     } finally {
       console.log("Loading FALSE");
       setIsLoading(false);
+      setRespuesta(true);
     }
   }
 
@@ -51,10 +53,13 @@ export default function AiHome() {
       <main className={styles.main}>
         <NavigationBar/>
         <ChatGPT3Explanation/>
-        <img src="/brain.gif" className={styles.icon} />
-        <div className={styles.result}>
-        {result}
-        </div>
+        <img src="/brain.gif" className={styles.icon}/>
+        {respuesta && <div className={styles.result}>
+          <p>ChatFs: </p>
+          {result}
+          </div>
+        }
+        
         <form className={styles.form} onSubmit={onSubmit}>
           <input
             className={styles.input_main}
