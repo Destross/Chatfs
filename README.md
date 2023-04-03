@@ -1,5 +1,5 @@
-# Mindy-AI una Inteligencia Artificial utilizando el motor de ChatGPT3 de OpenAI.
+# Chatfs una Inteligencia Artificial utilizando el motor de ChatGPT3 de OpenAI.
 
 Con motivos de aprender como integrar una IA a un Sitio Web por Felipe-Sagredo.
 
-Puedes tener acceso en: [https://mindy-ai.netlify.app/]
+Puedes tener acceso en: [https://chatfs.netlify.app/]
