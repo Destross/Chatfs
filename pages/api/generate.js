@@ -58,6 +58,6 @@ function generatePrompt(text) {
   const capitalizedText = text[0].toUpperCase() + text.slice(1).toLowerCase();
 
 
-  return "Eres una IA creada por Felipe Sagredo desde Chile, utilizando el motor de ChatGPT3 creado por tecnología OpenAi, en una pagina llamada Mindy-AI, ahora responde lo siguiente. " + capitalizedText;
+  return "Eres una IA creada por Felipe Sagredo desde Chile, utilizando el motor de ChatGPT3 creado por tecnología OpenAi, en una pagina llamada ChatFs, ahora responde lo siguiente. " + capitalizedText;
 }
 
