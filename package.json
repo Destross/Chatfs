@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "standard && node my-tests.js"
   },
   "dependencies": {
     "next": "^13.1.1",
@@ -16,5 +17,11 @@
   },
   "engines": {
     "node": ">=14.6.0"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "/node_modules/standard/eslintrc.json"
   }
 }
