@@ -5,7 +5,7 @@ import NavigationBar from "./NavigationBar";
 import FooterBar from "./FooterBar";
 
 export default function AiHome() {
-  
+
   const [textInput, setTextInput] = useState("");
   const [result, setResult] = useState();
   const [isLoading, setIsLoading] = useState(false);
@@ -37,7 +37,7 @@ export default function AiHome() {
       setResult(data.result);
       setTextInput("");
 
-    } catch(error) {
+    } catch (error) {
       console.error(error);
       alert(error.message);
 
@@ -51,15 +51,15 @@ export default function AiHome() {
   return (
     <div>
       <main className={styles.main}>
-        <NavigationBar/>
-        <ChatGPT3Explanation/>
-        <img src="/brain.gif" className={styles.icon}/>
+        <NavigationBar />
+        <ChatGPT3Explanation />
+        <img src="/brain.gif" className={styles.icon} />
         {respuesta && <div className={styles.result}>
           <p>ChatFs: </p>
           {result}
-          </div>
+        </div>
         }
-        
+
         <form className={styles.form} onSubmit={onSubmit}>
           <input
             className={styles.input_main}
@@ -73,9 +73,7 @@ export default function AiHome() {
         </form>
 
         {isLoading && <img src={loaderImg} className={styles.loader} />}
-        
-        <button className={styles.btn_reset} onClick={() => window.location.reload(false)}>Recargar!</button>
-        <FooterBar/>
+        <FooterBar />
       </main>
     </div>
   );
