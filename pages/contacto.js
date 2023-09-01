@@ -13,8 +13,8 @@ export default function Contact() {
         <div className={styles.contacto_1}>
         <h1>Contacto</h1>
         <p>felipesagredogalindo@gmail.com</p>
-        <a href="https://github.com/Destross" target="_blank">GitHub</a>
-        <a href="https://github.com/Destross/Chatfs" target="_blank">Proyecto ChatFs</a>
+        <a href="https://github.com/felipesagredo" target="_blank">GitHub</a>
+        <a href="https://github.com/felipesagredo/Chatfs" target="_blank">Proyecto ChatFs</a>
         </div>
       </div>
     </div>
