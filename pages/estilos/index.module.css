@@ -1,0 +1,74 @@
+.main {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 20%;
+  grid-template-rows: 150px 1fr 50px 100px;
+  min-height: 100vh;
+  grid-template-areas:
+    "logo navigation navigation head"
+
+    "aside result result friends"
+
+    "aside form form friends"
+
+    "footer footer footer footer"
+  ;
+}
+
+.navigationBar {
+  grid-area: navigation;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.head {
+  grid-area: head;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.icon {
+  max-width: 100px;
+  grid-area: logo;
+  background-color: lightslategray;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.friends {
+  grid-area: friends;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.result {
+  grid-area: result;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.form {
+  grid-area: form;
+  background-color: lightgreen;
+  border-radius: 20px;
+  padding: 10px;
+  vertical-align: center;
+}
+
+.footerBar {
+  grid-area: footer;
+  background-color: lightslategray;
+  border-radius: 20px;
+  padding: 10px;
+}
