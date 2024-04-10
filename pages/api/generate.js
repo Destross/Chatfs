@@ -28,12 +28,11 @@ export default async function (req, res) {
 
   try {
     const completion = await openai.createCompletion({
-      model: "gpt-3.5-turbo-instruct",
-      prompt: generatePrompt(text),
-      temperature: 0.1,
-      max_tokens: 3500,
+      model: "gpt-3.5-turbo-0125",
+      prompt: generatePrompt(text)
     });
     const result = completion.data.choices[0].text;
+    console.log(result);
     const formattedResult = result.replace(/•\-/g,"\n");
     res.status(200).json({ result: formattedResult });
 
